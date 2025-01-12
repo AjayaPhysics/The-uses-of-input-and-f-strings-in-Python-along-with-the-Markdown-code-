@@ -1,0 +1,2 @@
+name = "Ajaya"
+print(f"Hello, {name}!")
