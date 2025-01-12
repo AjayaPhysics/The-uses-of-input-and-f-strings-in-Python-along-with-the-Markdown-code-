@@ -1,0 +1,2 @@
+city = input("Enter your city (or press Enter for default): ") or "Unknown"
+print(f"You are from {city}.")
