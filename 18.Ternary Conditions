@@ -1,0 +1,2 @@
+score = 85
+print(f"Result: {'Pass' if score >= 50 else 'Fail'}")
