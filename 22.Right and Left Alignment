@@ -1,0 +1,3 @@
+name = "Ajaya"
+print(f"Right aligned: {name:>10}")
+print(f"Left aligned: {name:<10}")
