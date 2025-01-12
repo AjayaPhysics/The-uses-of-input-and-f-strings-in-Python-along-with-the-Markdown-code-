@@ -1,0 +1,7 @@
+gender = input("Enter your gender (M/F): ").strip().upper()
+if gender == "M":
+    print("Hello, Sir!")
+elif gender == "F":
+    print("Hello, Ma'am!")
+else:
+    print("Invalid input!")
