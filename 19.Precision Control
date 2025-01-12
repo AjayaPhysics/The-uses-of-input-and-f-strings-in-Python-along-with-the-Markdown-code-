@@ -1,0 +1,2 @@
+value = 12.34567
+print(f"Rounded value: {value:.2f}")
