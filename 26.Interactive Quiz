@@ -1,0 +1,5 @@
+score = 0
+question1 = input("What is the capital of France? ").strip().lower()
+if question1 == "paris":
+    score += 1
+print(f"Your score: {score}/1")
