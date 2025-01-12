@@ -1,0 +1,8 @@
+print("Enter multiple lines (type 'STOP' to end):")
+lines = []
+while True:
+    line = input()
+    if line == "STOP":
+        break
+    lines.append(line)
+print(f"You entered:\n{lines}")
