@@ -1,0 +1,48 @@
+# Interactive Quiz: 10 Questions
+
+def quiz():
+    # Questions and answers
+    questions = [
+        {"question": "1. What is the capital of France?", "options": ["A. Paris", "B. London", "C. Berlin", "D. Rome"], "answer": "A"},
+        {"question": "2. What is 5 + 3?", "options": ["A. 5", "B. 8", "C. 10", "D. 15"], "answer": "B"},
+        {"question": "3. Who wrote 'Hamlet'?", "options": ["A. Charles Dickens", "B. Mark Twain", "C. William Shakespeare", "D. Jane Austen"], "answer": "C"},
+        {"question": "4. What is the largest planet in the Solar System?", "options": ["A. Earth", "B. Jupiter", "C. Saturn", "D. Neptune"], "answer": "B"},
+        {"question": "5. What is the square root of 16?", "options": ["A. 2", "B. 3", "C. 4", "D. 8"], "answer": "C"},
+        {"question": "6. Which gas do plants use in photosynthesis?", "options": ["A. Oxygen", "B. Carbon Dioxide", "C. Nitrogen", "D. Hydrogen"], "answer": "B"},
+        {"question": "7. What is the boiling point of water in Celsius?", "options": ["A. 0°C", "B. 50°C", "C. 100°C", "D. 200°C"], "answer": "C"},
+        {"question": "8. Who discovered gravity?", "options": ["A. Albert Einstein", "B. Isaac Newton", "C. Galileo Galilei", "D. Nikola Tesla"], "answer": "B"},
+        {"question": "9. What is the chemical symbol for water?", "options": ["A. H2O", "B. O2", "C. CO2", "D. NaCl"], "answer": "A"},
+        {"question": "10. What is the hardest natural substance?", "options": ["A. Steel", "B. Diamond", "C. Graphite", "D. Gold"], "answer": "B"}
+    ]
+    
+    score = 0
+    
+    print("Welcome to the Quiz!")
+    print("Please answer each question by typing the correct option (A, B, C, or D).")
+    print("-" * 50)
+    
+    # Ask questions
+    for q in questions:
+        print(q["question"])
+        for option in q["options"]:
+            print(option)
+        user_answer = input("Your answer: ").strip().upper()
+        
+        if user_answer == q["answer"]:
+            print("Correct!\n")
+            score += 1
+        else:
+            print(f"Wrong! The correct answer was {q['answer']}.\n")
+    
+    print("-" * 50)
+    print(f"Quiz Completed! Your score: {score}/{len(questions)}")
+    if score >= 8:
+        print("Excellent job!")
+    elif score >= 5:
+        print("Good effort!")
+    else:
+        print("Better luck next time!")
+    print("-" * 50)
+
+# Run the quiz
+quiz()
