@@ -1,0 +1,2 @@
+subjects = ["Math", "Physics", "Chemistry"]
+print(f"My favorite subject is {subjects[1]}.")
