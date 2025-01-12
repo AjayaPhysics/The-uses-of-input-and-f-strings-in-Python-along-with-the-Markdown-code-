@@ -1,0 +1,3 @@
+name = "Ajaya"
+age = 30
+print(f"{name} is {age} years old and will turn {age + 1} next year.")
