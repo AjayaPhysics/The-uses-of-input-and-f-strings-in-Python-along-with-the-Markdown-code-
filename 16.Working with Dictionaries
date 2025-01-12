@@ -1,0 +1,2 @@
+student = {"name": "Ajay", "grade": "A"}
+print(f"{student['name']} has a grade of {student['grade']}.")
