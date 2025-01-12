@@ -1,0 +1,4 @@
+pi = 3.14159
+large_number = 123456789
+print(f"Pi rounded: {pi:.2f}")
+print(f"With commas: {large_number:,}")
