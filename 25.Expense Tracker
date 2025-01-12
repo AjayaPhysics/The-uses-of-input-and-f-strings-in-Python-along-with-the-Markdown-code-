@@ -1,0 +1,5 @@
+item = input("Enter item name: ")
+price = float(input("Enter price: "))
+quantity = int(input("Enter quantity: "))
+total = price * quantity
+print(f"{quantity} x {item} costs {total:.2f}.")
